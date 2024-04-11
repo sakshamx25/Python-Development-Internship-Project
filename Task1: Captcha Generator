@@ -1,0 +1,9 @@
+import random
+import string
+
+characters = string.ascii_letters + string.digits
+captcha = '' 
+for _ in range(5):
+    captcha += random.choice(characters)
+
+print("Generated Captcha:", captcha)

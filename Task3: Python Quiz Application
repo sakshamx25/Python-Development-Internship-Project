@@ -1,0 +1,32 @@
+def run_quiz(questions):
+    score = 0
+    for question, correct_answer in questions.items():
+        print(question)
+        user_answer = input("Your answer: ")
+        if user_answer.lower() == correct_answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect!")
+        print(f"Your current score: {score}/{len(questions)}\n")
+    print("Quiz completed!")
+    print(f"Your final score is: {score}/{len(questions)}")
+    if score == len(questions):
+        print("Congratulations! You got all the questions correct!")
+    elif score >= len(questions) / 2:
+        print("Well done! You did a good job.")
+    else:
+        print("You can do better. Keep practicing!")
+
+
+# Sample questions and answers
+questions = {
+    "What is the capital of France?": "Paris",
+    "Which planet is known as the Red Planet?": "Mars",
+    "What is the largest mammal in the world?": "Blue whale",
+    "What is the powerhouse of the cell?": "Mitochondria",
+    "Who wrote 'To Kill a Mockingbird'?": "Harper Lee"
+}
+
+# Run the quiz
+run_quiz(questions)

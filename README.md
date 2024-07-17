@@ -1,2 +1,2 @@
 # Internship-Project
-My Python Development Internship from HunarIntern.
+My Python Development Internship.
